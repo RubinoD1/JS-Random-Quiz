@@ -10,9 +10,11 @@ Splash page background image: https://picography.co/
 ## pseudo code
 
 Increase font size on splash page 
+Add some padding to increase box size
+Title on top and button in middle-- button larger and prominent
 
 add DOM element for start button  
-make a event listener for the start button 
+make a event listener for the start button (test it with a console.log). 
 
 Make an array for the quiz questions: question, 4 answers, 1 with true value the rest false.
 
@@ -29,5 +31,12 @@ Make layout for quiz itself
 
 
 
+
+General 
+- local storage to save scores? 
+- Replay button? 
+- Selectable time ranges (60, 30, 15) with increased score for harder. 
+- Footer with GitHub info? 
+- Rename to quiz game? 
 
 
