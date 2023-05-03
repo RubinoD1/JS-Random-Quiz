@@ -11,8 +11,6 @@ Splash page background image: https://picography.co/
 
 Title on top and button in middle-- button larger and prominent
 
-Make an array for the quiz questions: question, 4 answers, 1 with true value the rest false.
-
 On start button click display question/answer layout 
 - add 'hidden' class to CSS with the visibility: hidden property. 
 Note: could either remove the hidden property to re-display or switch to visibility: visible. 

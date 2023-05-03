@@ -31,3 +31,4 @@ const quiz =
   }  
 ]
 //quiz[0].validity[0] would be true -- access sample.
+//console.log(quiz[0].validity[0]);
