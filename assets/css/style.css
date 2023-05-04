@@ -33,18 +33,27 @@ body {
 #quiz {
   background-color: #5995c5;
   padding:30px;
+  font-size: x-large;
+  
 }
 
 
 #question {
   justify-content: center;
   display: flex;
+  border:solid;
+  padding: 10px;
+  background-color: #5f9ea0;
 }
 
 .answer-buttons {
   display: grid;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  
+  /* bg color and padding create a border around the answer butttons*/
+  background-color: #607D8B; 
+  padding: 15px 32px;
+  border-radius: 25px; /* makes corners round */
+}
+
+.answer {
+  cursor: pointer; /* adds hand pointer on hover*/
 }

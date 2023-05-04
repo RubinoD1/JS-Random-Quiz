@@ -1,5 +1,9 @@
 //DOM elements
 const startButton = document.getElementById("start-button");
+const answerButtonA = document.getElementById("answer-a");
+const answerButtonB= document.getElementById("answer-b");
+const answerButtonC = document.getElementById("answer-c");
+const answerButtonD = document.getElementById("answer-d");
 
 //event listener for start button 
 startButton.addEventListener("click", function(){
