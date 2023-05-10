@@ -1,11 +1,13 @@
 //DOM elements
 const startButton = document.getElementById("start-button");
+const question = document.getElementById("question");
 const answerButtonA = document.getElementById("answer-a");
 const answerButtonB= document.getElementById("answer-b");
 const answerButtonC = document.getElementById("answer-c");
 const answerButtonD = document.getElementById("answer-d");
 const hero = document.getElementById("hero"); //start page box 
 const quizBox = document.getElementById("quiz"); //quiz page box
+
 
 //event listener for start button 
 startButton.addEventListener("click", function(){
@@ -19,9 +21,13 @@ startButton.addEventListener("click", function(){
 
 //function to select quiz question and add info to HTML page
 function quiz() {
-  console.log("hello");
+ 
+  question.textContent = quizQuestions[0].question;
+  answerButtonA.textContent = quizQuestions[0].answers[0];
+  answerButtonB.textContent = quizQuestions[0].answers[1];
+  answerButtonC.textContent = quizQuestions[0].answers[2];
+  answerButtonD.textContent = quizQuestions[0].answers[3];
 }
-
 
 
 
@@ -53,3 +59,6 @@ const quizQuestions =
 ];
 //quizQuestions[0].validity[0] would be true -- access sample.
 //console.log(quizQuestions[0].validity[0]);
+
+//Random select from array 
+//console.log(quizQuestions[Math.floor(Math.random()*quizQuestions.length)]);
