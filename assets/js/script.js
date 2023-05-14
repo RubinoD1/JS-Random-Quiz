@@ -36,23 +36,24 @@ function shuffleQueestions(quizQuestions) {
 
 //function to select quiz question and add info to HTML page
 function quiz() {
-
-if(tracker < quizQuestions.length) {
+  if(tracker < quizQuestions.length){
     //HTML text info 
     question.textContent = quizQuestions[tracker].question;
     answerButtonA.textContent = quizQuestions[tracker].answers[0];
     answerButtonB.textContent = quizQuestions[tracker].answers[1];
     answerButtonC.textContent = quizQuestions[tracker].answers[2];
     answerButtonD.textContent = quizQuestions[tracker].answers[3];
-    tracker = tracker + 1; //iteration tracker
-} else {
-  //call score screen function to end quiz
+    return tracker = tracker + 1; //iteration tracker
+    //call timer fuction or simply return tracker updated value
+  }else {
+    //call score screen function to end quiz
+  }
 }
 
-
+//function to check user answer for correctness 
+function answerCheck() {
+ //after answer check call the quiz function 
 }
-
-
 
 
 
@@ -81,5 +82,5 @@ const quizQuestions =
   }  
 ];
 //quizQuestions[0].validity[0] would be true -- access sample.
-console.log(tracker);
+//console.log(tracker);
 
