@@ -16,17 +16,38 @@ startButton.addEventListener("click", function(){
   //unhide quiz remove hidden class 
   quizBox.classList.remove("hidden");
   //trigger quiz function
-  quiz();
+  shuffleQueestions(quizQuestions);
 });
+
+//Using the Fisher Yates shuffle to randomize the quiz questions 
+function shuffleQueestions(quizQuestions) {
+  let oldElement; //holds reference to the current element in the loop 
+  for (let i = quizQuestions.length - 1; i > 0; i--) {//iterate through the array starting at the last element.
+    let rand = Math.floor(Math.random() * (i + 1));//used to randomize the selected array element
+    oldElement = quizQuestions[i];//last element in array
+    quizQuestions[i] = quizQuestions[rand];//put the selected array element in a random place
+    quizQuestions[rand] = oldElement;//put the randomly slected array element in the place of the index
+  }
+    return quiz(quizQuestions);//return the shuffled array and call the quiz function 
+} 
+ 
+
 
 //function to select quiz question and add info to HTML page
 function quiz() {
- 
+
+ // remove selected from array choices 
+
+
+ //if not empty display array info -- else go to score screen 
+
+  //HTML text info 
   question.textContent = quizQuestions[0].question;
   answerButtonA.textContent = quizQuestions[0].answers[0];
   answerButtonB.textContent = quizQuestions[0].answers[1];
   answerButtonC.textContent = quizQuestions[0].answers[2];
   answerButtonD.textContent = quizQuestions[0].answers[3];
+  //answerButtonD.textContent = quizQuestions[0].answers[3];
 }
 
 
@@ -58,7 +79,7 @@ const quizQuestions =
   }  
 ];
 //quizQuestions[0].validity[0] would be true -- access sample.
-//console.log(quizQuestions[0].validity[0]);
+//console.log(quizQuestions[0]);
 
 //Random select from array 
 //console.log(quizQuestions[Math.floor(Math.random()*quizQuestions.length)]);
