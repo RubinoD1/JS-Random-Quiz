@@ -8,6 +8,7 @@ const answerButtonD = document.getElementById("answer-d");
 const hero = document.getElementById("hero"); //start page box 
 const quizBox = document.getElementById("quiz"); //quiz page box
 
+let tracker = 0;//iteration tracker 
 
 //event listener for start button 
 startButton.addEventListener("click", function(){
@@ -36,18 +37,19 @@ function shuffleQueestions(quizQuestions) {
 //function to select quiz question and add info to HTML page
 function quiz() {
 
- // remove selected from array choices 
+if(tracker < quizQuestions.length) {
+    //HTML text info 
+    question.textContent = quizQuestions[tracker].question;
+    answerButtonA.textContent = quizQuestions[tracker].answers[0];
+    answerButtonB.textContent = quizQuestions[tracker].answers[1];
+    answerButtonC.textContent = quizQuestions[tracker].answers[2];
+    answerButtonD.textContent = quizQuestions[tracker].answers[3];
+    tracker = tracker + 1; //iteration tracker
+} else {
+  //call score screen function to end quiz
+}
 
 
- //if not empty display array info -- else go to score screen 
-
-  //HTML text info 
-  question.textContent = quizQuestions[0].question;
-  answerButtonA.textContent = quizQuestions[0].answers[0];
-  answerButtonB.textContent = quizQuestions[0].answers[1];
-  answerButtonC.textContent = quizQuestions[0].answers[2];
-  answerButtonD.textContent = quizQuestions[0].answers[3];
-  //answerButtonD.textContent = quizQuestions[0].answers[3];
 }
 
 
@@ -79,5 +81,5 @@ const quizQuestions =
   }  
 ];
 //quizQuestions[0].validity[0] would be true -- access sample.
-//console.log(quizQuestions[0]);
+console.log(tracker);
 
