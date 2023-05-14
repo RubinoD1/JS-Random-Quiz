@@ -81,5 +81,3 @@ const quizQuestions =
 //quizQuestions[0].validity[0] would be true -- access sample.
 //console.log(quizQuestions[0]);
 
-//Random select from array 
-//console.log(quizQuestions[Math.floor(Math.random()*quizQuestions.length)]);
