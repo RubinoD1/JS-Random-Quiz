@@ -34,7 +34,6 @@ body {
   background-color: #5995c5;
   padding:30px;
   font-size: x-large;
-  
 }
 
 
@@ -56,4 +55,10 @@ body {
 
 .answer {
   cursor: pointer; /* adds hand pointer on hover*/
+}
+
+#score { 
+  background-color: #b0cd8e;
+  padding: 160px;
+  border:solid;
 }
