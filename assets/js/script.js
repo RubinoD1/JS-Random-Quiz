@@ -68,19 +68,19 @@ const quizQuestions =
   {
     question: "This is question 1?",
     answers: ["A", "B", "C", "D"],
-    validity: [true, false, false, false]
+    correct: "A"
   },
   {
     question: "This is question 2?",
     answers: ["A", "B", "C", "D"],
-    validity: [false, true, false, false]
+    correct: "B"
   },
   {
     question: "This is question 3?",
     answers: ["A", "B", "C", "D"],
-    validity: [false, false, true, false]
+    correct: "C"
   }  
 ];
-//quizQuestions[0].validity[0] would be true -- access sample.
-//console.log(tracker);
+//quizQuestions[0].correct[0] would be A -- access sample.
+//console.log(quizQuestions[0].correct[0]);
 
