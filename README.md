@@ -9,6 +9,20 @@ Splash page background image: https://picography.co/
 
 ## pseudo code
 
+Current to-do 
+1. array.length is score total and score is answered correctly 
+- displaying correctly on score screen
+
+2. Make score function 
+
+3. Replay button 
+- add Dom element 
+- reset score 
+- hide score screen, unhide quizBox
+- run shuffle function again (Add shuffled or same quiz options?)
+
+-- General check list --- 
+
 Quiz function 
 - if/else statement
 if i < array.length 
