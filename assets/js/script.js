@@ -18,7 +18,20 @@ startButton.addEventListener("click", function(){
   quizBox.classList.remove("hidden");
   //trigger quiz function
   shuffleQueestions(quizQuestions);
+  quiz();
 });
+
+//answer buttons event listener 
+//set answer button user click to userAnswer var and call the validity function with the var
+answerButtonA.addEventListener("click", function() {
+  let userAnswer = document.getElementById("answer-a").innerHTML; 
+  //console.log(userAnswer);
+  answerCheck(userAnswer);
+}); 
+
+
+
+
 
 //Using the Fisher Yates shuffle to randomize the quiz questions 
 function shuffleQueestions(quizQuestions) {
@@ -29,7 +42,7 @@ function shuffleQueestions(quizQuestions) {
     quizQuestions[i] = quizQuestions[rand];//put the selected array element in a random place
     quizQuestions[rand] = oldElement;//put the randomly slected array element in the place of the index
   }
-    return quiz(quizQuestions);//return the shuffled array and call the quiz function 
+    return quizQuestions;//return the shuffled array and call the quiz function 
 } 
  
 
@@ -43,16 +56,30 @@ function quiz() {
     answerButtonB.textContent = quizQuestions[tracker].answers[1];
     answerButtonC.textContent = quizQuestions[tracker].answers[2];
     answerButtonD.textContent = quizQuestions[tracker].answers[3];
-    return tracker = tracker + 1; //iteration tracker
+    return //tracker = tracker + 1; //iteration tracker
     //call timer fuction or simply return tracker updated value
   }else {
+    //No more questions, hide quiz layout
+    quizBox.classList.add("hidden");
+    //unhide score screen remove hidden class 
+    hero.classList.remove("hidden");
     //call score screen function to end quiz
   }
 }
 
 //function to check user answer for correctness 
-function answerCheck() {
+function answerCheck(userAnswer) {
  //after answer check call the quiz function 
+ console.log(tracker);
+ if (userAnswer === quizQuestions[tracker].correct){
+  tracker = tracker + 1; //iteration tracker
+  console.log("Correct!");
+  quiz();
+ } else {
+  console.log("Incorrect :(");
+  tracker = tracker + 1; //iteration tracker
+  quiz();
+ }
 }
 
 
@@ -79,6 +106,11 @@ const quizQuestions =
     question: "This is question 3?",
     answers: ["A", "B", "C", "D"],
     correct: "C"
+  },
+  {
+    question: "This is question 4?",
+    answers: ["A", "B", "C", "D"],
+    correct: "D"
   }  
 ];
 //quizQuestions[0].correct[0] would be A -- access sample.
