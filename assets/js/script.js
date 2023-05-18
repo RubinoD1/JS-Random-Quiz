@@ -7,7 +7,9 @@ const answerButtonC = document.getElementById("answer-c");
 const answerButtonD = document.getElementById("answer-d");
 const hero = document.getElementById("hero"); //start page box 
 const quizBox = document.getElementById("quiz"); //quiz page box
+const scoreScreen = document.getElementById("score"); //score paage box 
 const results = document.getElementById("user-score"); //user score 
+const replay = document.getElementById("replay-button");
 
 let tracker = 0;//iteration tracker 
 let score = 0; //user score tracker
@@ -23,6 +25,16 @@ startButton.addEventListener("click", function(){
   shuffleQueestions(quizQuestions);
   quiz();
 });
+
+//reshuffle array and begin the quiz 
+replay.addEventListener("click", function(){
+  score = 0; //reset the user score 
+  tracker = 0; //reset iteration
+  scoreScreen.classList.add("hidden"); //hide the score screen 
+  quizBox.classList.remove("hidden"); //unhide quiz 
+  shuffleQueestions(quizQuestions); //reshuffle array
+  quiz(); //begin the quiz 
+})
 
 //answer buttons event listener 
 //set answer button user click to userAnswer var and call the validity function with the var
@@ -65,7 +77,7 @@ function quiz() {
     //No more questions, hide quiz layout
     quizBox.classList.add("hidden");
     //unhide score screen remove hidden class 
-    hero.classList.remove("hidden");
+    scoreScreen.classList.remove("hidden");
     //user score results
     results.textContent = `${score}` + " / " + `${quizQuestions.length}`; 
     //call score screen function to end quiz

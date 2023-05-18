@@ -11,13 +11,7 @@ Splash page background image: https://picography.co/
 
 Current to-do 
 
-3. Replay button 
-- add Dom element 
-- reset score 
-- hide score screen, unhide quizBox
-- run shuffle function again (Add shuffled or same quiz options?)
-
-4. Make event listener for the remaining anser buttons 
+4. Make event listener for the remaining answer buttons 
 - make either a common button class and a event listener that takes in that input 
 - or, make an eveent listener for all 4 buttons seperatly. 
 
