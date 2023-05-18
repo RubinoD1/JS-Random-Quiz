@@ -14,7 +14,6 @@ const replay = document.getElementById("replay-button");
 let tracker = 0;//iteration tracker 
 let score = 0; //user score tracker
 
-
 //event listener for start button 
 startButton.addEventListener("click", function(){
   //add hidden class to hero-text
@@ -61,7 +60,6 @@ function shuffleQueestions(quizQuestions) {
 } 
  
 
-
 //function to select quiz question and add info to HTML page
 function quiz() {
   if(tracker < quizQuestions.length){
@@ -84,6 +82,7 @@ function quiz() {
   }
 }
 
+
 //function to check user answer for correctness 
 function answerCheck(userAnswer) {
  //after answer check call the quiz function 
@@ -99,12 +98,6 @@ function answerCheck(userAnswer) {
   quiz();
  }
 }
-
-
-
-
-
-
 
 
 //nested array for the quiz questions/answers
@@ -131,6 +124,4 @@ const quizQuestions =
     correct: "D"
   }  
 ];
-//quizQuestions[0].correct[0] would be A -- access sample.
-//console.log(quizQuestions[0].correct[0]);
 
