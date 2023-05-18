@@ -10,16 +10,22 @@ Splash page background image: https://picography.co/
 ## pseudo code
 
 Current to-do 
-1. array.length is score total and score is answered correctly 
-- displaying correctly on score screen
-
-2. Make score function 
 
 3. Replay button 
 - add Dom element 
 - reset score 
 - hide score screen, unhide quizBox
 - run shuffle function again (Add shuffled or same quiz options?)
+
+4. Make event listener for the remaining anser buttons 
+- make either a common button class and a event listener that takes in that input 
+- or, make an eveent listener for all 4 buttons seperatly. 
+
+5. Remember to remove the extra HTML and CSS files. 
+
+6. Style the HTML 
+
+7. Make the README
 
 -- General check list --- 
 

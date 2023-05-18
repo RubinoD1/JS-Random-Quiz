@@ -7,8 +7,11 @@ const answerButtonC = document.getElementById("answer-c");
 const answerButtonD = document.getElementById("answer-d");
 const hero = document.getElementById("hero"); //start page box 
 const quizBox = document.getElementById("quiz"); //quiz page box
+const results = document.getElementById("user-score"); //user score 
 
 let tracker = 0;//iteration tracker 
+let score = 0; //user score tracker
+
 
 //event listener for start button 
 startButton.addEventListener("click", function(){
@@ -56,13 +59,15 @@ function quiz() {
     answerButtonB.textContent = quizQuestions[tracker].answers[1];
     answerButtonC.textContent = quizQuestions[tracker].answers[2];
     answerButtonD.textContent = quizQuestions[tracker].answers[3];
-    return //tracker = tracker + 1; //iteration tracker
+    return;
     //call timer fuction or simply return tracker updated value
   }else {
     //No more questions, hide quiz layout
     quizBox.classList.add("hidden");
     //unhide score screen remove hidden class 
     hero.classList.remove("hidden");
+    //user score results
+    results.textContent = `${score}` + " / " + `${quizQuestions.length}`; 
     //call score screen function to end quiz
   }
 }
@@ -73,10 +78,11 @@ function answerCheck(userAnswer) {
  console.log(tracker);
  if (userAnswer === quizQuestions[tracker].correct){
   tracker = tracker + 1; //iteration tracker
-  console.log("Correct!");
+  score = score + 1; //add to user score 
+  //console.log("Correct!");
   quiz();
  } else {
-  console.log("Incorrect :(");
+  //console.log("Incorrect :(");
   tracker = tracker + 1; //iteration tracker
   quiz();
  }
