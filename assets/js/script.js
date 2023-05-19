@@ -16,13 +16,10 @@ let score = 0; //user score tracker
 
 //event listener for start button 
 startButton.addEventListener("click", function(){
-  //add hidden class to hero-text
-  hero.classList.add("hidden");
-  //unhide quiz remove hidden class 
-  quizBox.classList.remove("hidden");
-  //trigger quiz function
-  shuffleQueestions(quizQuestions);
-  quiz();
+  hero.classList.add("hidden"); //add hidden class to hero (start screen)
+  quizBox.classList.remove("hidden"); //unhide quiz by removing the hidden class 
+  shuffleQueestions(quizQuestions); //shuffle the quizQuestions array
+  quiz(); //trigger quiz function
 });
 
 //reshuffle array and begin the quiz 
@@ -35,11 +32,25 @@ replay.addEventListener("click", function(){
   quiz(); //begin the quiz 
 })
 
-//answer buttons event listener 
-//set answer button user click to userAnswer var and call the validity function with the var
+//answer buttons event listeners 
+//set answer button user click to userAnswer var and call the validity function with the var passed in
 answerButtonA.addEventListener("click", function() {
   let userAnswer = document.getElementById("answer-a").innerHTML; 
-  //console.log(userAnswer);
+  answerCheck(userAnswer);
+}); 
+
+answerButtonB.addEventListener("click", function() {
+  let userAnswer = document.getElementById("answer-b").innerHTML; 
+  answerCheck(userAnswer);
+}); 
+
+answerButtonC.addEventListener("click", function() {
+  let userAnswer = document.getElementById("answer-c").innerHTML; 
+  answerCheck(userAnswer);
+}); 
+
+answerButtonD.addEventListener("click", function() {
+  let userAnswer = document.getElementById("answer-d").innerHTML; 
   answerCheck(userAnswer);
 }); 
 
@@ -50,7 +61,7 @@ answerButtonA.addEventListener("click", function() {
 //Using the Fisher Yates shuffle to randomize the quiz questions 
 function shuffleQueestions(quizQuestions) {
   let oldElement; //holds reference to the current element in the loop 
-  for (let i = quizQuestions.length - 1; i > 0; i--) {//iterate through the array starting at the last element.
+  for (let i = quizQuestions.length - 1; i > 0; i--) {//iterate through the array starting at the last element. 
     let rand = Math.floor(Math.random() * (i + 1));//used to randomize the selected array element
     oldElement = quizQuestions[i];//last element in array
     quizQuestions[i] = quizQuestions[rand];//put the selected array element in a random place
@@ -78,7 +89,6 @@ function quiz() {
     scoreScreen.classList.remove("hidden");
     //user score results
     results.textContent = `${score}` + " / " + `${quizQuestions.length}`; 
-    //call score screen function to end quiz
   }
 }
 
@@ -88,16 +98,27 @@ function answerCheck(userAnswer) {
  //after answer check call the quiz function 
  console.log(tracker);
  if (userAnswer === quizQuestions[tracker].correct){
+  document.body.style.backgroundColor = "#008000"; //change bg color 
   tracker = tracker + 1; //iteration tracker
   score = score + 1; //add to user score 
-  //console.log("Correct!");
+  //run after 3 seconds function to restore default bg color 
+  
   quiz();
  } else {
-  //console.log("Incorrect :(");
+  document.body.style.backgroundColor = "#d91e10";//change bg color 
   tracker = tracker + 1; //iteration tracker
   quiz();
  }
 }
+
+//change bg color: document.body.style.backgroundColor = "red";
+//change bg image: document.body.style.backgroundImage = "url('img_tree.png')"; 
+//timer: 
+function bgColorRestore (){
+ //reset bg to default 
+ document.body.style.backgroundColor = "#008000";
+}
+
 
 
 //nested array for the quiz questions/answers

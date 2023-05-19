@@ -18,8 +18,9 @@ Current to-do
 5. Add user feedback when selecting an answer 
 - correct trigger 
 - incorrect trigger 
-- Possibly make a userFeedback function or include in answer validation function 
+- Possibly make a userFeedback function or include in answerCheck function 
 - basic temp response would be to change the bg color for a timed period AND THEN call the quiz function for the next question. 
+- celebration confetti?  
 
 6. Style the HTML 
 
