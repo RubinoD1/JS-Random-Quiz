@@ -73,7 +73,9 @@ function shuffleQueestions(quizQuestions) {
 
 //function to select quiz question and add info to HTML page
 function quiz() {
-  if(tracker < quizQuestions.length){
+    document.body.style.backgroundColor = "#5f9ea0"; //reset bg color to default (it is altered when an answer is selected) 
+  
+    if(tracker < quizQuestions.length){
     //HTML text info 
     question.textContent = quizQuestions[tracker].question;
     answerButtonA.textContent = quizQuestions[tracker].answers[0];
@@ -95,31 +97,17 @@ function quiz() {
 
 //function to check user answer for correctness 
 function answerCheck(userAnswer) {
- //after answer check call the quiz function 
- console.log(tracker);
- if (userAnswer === quizQuestions[tracker].correct){
-  document.body.style.backgroundColor = "#008000"; //change bg color 
-  tracker = tracker + 1; //iteration tracker
-  score = score + 1; //add to user score 
-  //run after 3 seconds function to restore default bg color 
-  
-  quiz();
- } else {
-  document.body.style.backgroundColor = "#d91e10";//change bg color 
-  tracker = tracker + 1; //iteration tracker
-  quiz();
- }
+  if (userAnswer === quizQuestions[tracker].correct){
+    document.body.style.backgroundColor = "#008000"; //change bg color  
+    tracker = tracker + 1; //iteration tracker
+    score = score + 1; //add to user score 
+    setTimeout(() => {quiz();}, 1000); //call the quiz function after 1 sec. The delay is for the bg color change. 
+  } else {
+    document.body.style.backgroundColor = "#d91e10";//change bg color 
+    tracker = tracker + 1; //iteration tracker
+    setTimeout(() => {quiz();}, 1000);
+  }
 }
-
-//change bg color: document.body.style.backgroundColor = "red";
-//change bg image: document.body.style.backgroundImage = "url('img_tree.png')"; 
-//timer: 
-function bgColorRestore (){
- //reset bg to default 
- document.body.style.backgroundColor = "#008000";
-}
-
-
 
 //nested array for the quiz questions/answers
 const quizQuestions = 
