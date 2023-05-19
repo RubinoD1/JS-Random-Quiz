@@ -1,28 +1,70 @@
-body, html {
-    height: 100%;
+body {
+  background-color:#135473;
 }
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.366), rgba(0, 0, 0, 0.5)), url("../images/main.jpg");
-
-  /* Set a specific height */
-  height: 100%;
-
+.hero-text {
+  background-color: #ffc20c7d;
+  text-align: center;
+  padding: 260px;
+  font-size: x-large;
+  border:solid;
   /* Position and center the image to scale nicely on all screens */
+  background-image: url("../images/mainbg.png");
+  height: 100%; /* Set a specific height */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+ 
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
+#start-button {
+  font-size: larger;
+  padding: 10px;
+  background-color: #33a0d5;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* controls position of container for all screens */
+.box-position {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+}
+
+#quiz {
+  background-color: #5995c5;
+  padding:30px;
+  font-size: x-large;
+}
+
+
+#question {
+  justify-content: center;
+  display: flex;
+  border:solid;
+  padding: 10px;
+  background-color: #5f9ea0;
+}
+
+.answer-buttons {
+  display: grid;
+  /* bg color and padding create a border around the answer butttons*/
+  background-color: #607D8B; 
+  padding: 15px 32px;
+  border-radius: 25px; /* makes corners round */
+}
+
+.answer {
+  cursor: pointer; /* adds hand pointer on hover*/
+}
+
+#score { 
+  background-color: #b0cd8e;
+  padding: 160px;
+  border:solid;
 }

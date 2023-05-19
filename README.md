@@ -16,17 +16,16 @@ Current to-do
 - or, make an eveent listener for all 4 buttons seperatly. 
 
 5. Add user feedback when selecting an answer 
-- correct trigger 
-- incorrect trigger 
-- Possibly make a userFeedback function or include in answerCheck function 
-- basic temp response would be to change the bg color for a timed period AND THEN call the quiz function for the next question. 
-- celebration confetti?  
+- Stick with just altering the bg color for 1 sec or add more fanfare? 
 
 6. Style the HTML 
 
 7. Remember to remove the extra HTML and CSS files. 
 
 8. Make the README
+
+9. Fisher Yates shuffle js code comments clean up. 
+- Double check comments throughout the repo -- cleanup / checkk for spelling mistakes
 
 -- General check list --- 
 
@@ -36,14 +35,8 @@ Answer validation
 
 Title on top and button in middle-- button larger and prominent
 
-Make layout for quiz itself
-- flash green if correct, red if false (could flash the selected button, or the background itslef, experiment to see what looks better). 
-- Timer box? 
-
-
 General 
-- Selectable time ranges (60, 30, 15) with increased score for harder. 
 - Footer with GitHub info? 
-- Rename to quiz game? 
+
 
 

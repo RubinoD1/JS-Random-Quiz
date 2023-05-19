@@ -55,9 +55,6 @@ answerButtonD.addEventListener("click", function() {
 }); 
 
 
-
-
-
 //Using the Fisher Yates shuffle to randomize the quiz questions 
 function shuffleQueestions(quizQuestions) {
   let oldElement; //holds reference to the current element in the loop 
@@ -73,9 +70,9 @@ function shuffleQueestions(quizQuestions) {
 
 //function to select quiz question and add info to HTML page
 function quiz() {
-    document.body.style.backgroundColor = "#5f9ea0"; //reset bg color to default (it is altered when an answer is selected) 
-  
-    if(tracker < quizQuestions.length){
+    //reset bg color to default (it is altered when an answer is selected) 
+    document.body.style.backgroundColor = "#5f9ea0"; 
+  if(tracker < quizQuestions.length){
     //HTML text info 
     question.textContent = quizQuestions[tracker].question;
     answerButtonA.textContent = quizQuestions[tracker].answers[0];
@@ -83,14 +80,10 @@ function quiz() {
     answerButtonC.textContent = quizQuestions[tracker].answers[2];
     answerButtonD.textContent = quizQuestions[tracker].answers[3];
     return;
-    //call timer fuction or simply return tracker updated value
   }else {
-    //No more questions, hide quiz layout
-    quizBox.classList.add("hidden");
-    //unhide score screen remove hidden class 
-    scoreScreen.classList.remove("hidden");
-    //user score results
-    results.textContent = `${score}` + " / " + `${quizQuestions.length}`; 
+    quizBox.classList.add("hidden");//No more questions, hide quiz layout
+    scoreScreen.classList.remove("hidden");//unhide score screen 
+    results.textContent = `${score}` + " / " + `${quizQuestions.length}`;  //user score results
   }
 }
 
