@@ -37,8 +37,8 @@ body {
 }
 
 #quiz {
-  background-color: #5995c5;
-  padding:30px;
+  background-color: #1b7ac6;
+  padding:200px;
   font-size: x-large;
 }
 
@@ -47,8 +47,8 @@ body {
   justify-content: center;
   display: flex;
   border:solid;
-  padding: 10px;
-  background-color: #5f9ea0;
+  padding: 50px;
+  background-color: #009fa4;
 }
 
 .answer-buttons {
@@ -61,6 +61,8 @@ body {
 
 .answer {
   cursor: pointer; /* adds hand pointer on hover*/
+  padding:15px; /* adjusts answer button size */
+  font-weight: bold; /* makes font bold for answer buttons*/
 }
 
 #score { 
