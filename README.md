@@ -1,10 +1,12 @@
 # JS-Random-Quiz
-A JavaScript built random quiz app. 
 
 GitHub repository:https://github.com/RubinoD1/JS-Random-Quiz
 GitHub live page:
 
 Start page royalty-free background image source: https://www.adobe.com/express/
+
+## Index
+
 
 ## Introduction 
 
@@ -53,6 +55,16 @@ const quizQuestions =
 ```
 As many questions as desired can be added to the quizQuestions array. 
 
+**IF the body bg-color is changed in the CSS file** 
+
+If a change is made to the body bg-color an update will need to made to reflect this change in the quiz function. The answerCheck function alters the bg-color of the body as part of the answer validation in order to give user feedback upon selecting an answer. When the quiz function is called the original body bg-color is restored. Below is an example: 
+
+```
+function quiz() {
+    document.body.style.backgroundColor = "#135473"; //the upadated color change will need to be made here
+}
+```
+
 ## Technology 
 
 - HTML 
@@ -79,15 +91,18 @@ Current to-do
 - Change the HTML on the question to either: correct, or incorrect. 
 
 6. Style the HTML 
+- CSS: get rid of style repeats by making shared classes. 
 
-7. Remember to remove the extra HTML and CSS files. 
+7. Make the README
+- index working 
+- screenshots added 
+- live page link added 
+- check spelling, grammar
 
-8. Make the README
+8. Fisher Yates shuffle js code comments clean up. 
+- Double check comments throughout the repo -- cleanup / check for spelling mistakes
 
-9. Fisher Yates shuffle js code comments clean up. 
-- Double check comments throughout the repo -- cleanup / checkk for spelling mistakes
-
-
+9. Add a favicon? 
 
 
 
