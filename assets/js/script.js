@@ -71,7 +71,7 @@ function shuffleQueestions(quizQuestions) {
 //function to select quiz question and add info to HTML page
 function quiz() {
     //reset bg color to default (it is altered when an answer is selected) 
-    document.body.style.backgroundColor = "#5f9ea0"; 
+    document.body.style.backgroundColor = "#135473"; 
   if(tracker < quizQuestions.length){
     //HTML text info 
     question.textContent = quizQuestions[tracker].question;
