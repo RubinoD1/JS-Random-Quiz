@@ -1,21 +1,28 @@
 body {
-  background-color:#1c516ad9;
+  background-color:#135473;
+  /* background-image: url("../images/quizPageBg.png"); */
 }
 
-
-/* Place text in the middle of the image */
 .hero-text {
   background-color: #ffc20c7d;
   text-align: center;
-  padding: 160px;
+  padding: 260px;
   font-size: x-large;
   border:solid;
+  /* Position and center the image to scale nicely on all screens */
+  background-image: url("../images/mainbg.png");
+  height: 100%; /* Set a specific height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
 }
 
 #start-button {
   font-size: larger;
   padding: 10px;
-  background-color: #ffa500;
+  background-color: #33a0d5;
 }
 
 .hidden {
@@ -31,9 +38,10 @@ body {
 }
 
 #quiz {
-  background-color: #5995c5;
-  padding:30px;
+  background-color: #1b7ac6;
+  padding:100px 150px; 
   font-size: x-large;
+  background-image: url("../images/quizPageBg.png");
 }
 
 
@@ -41,8 +49,8 @@ body {
   justify-content: center;
   display: flex;
   border:solid;
-  padding: 10px;
-  background-color: #5f9ea0;
+  padding: 50px;
+  background-color: #009fa4;
 }
 
 .answer-buttons {
@@ -55,10 +63,32 @@ body {
 
 .answer {
   cursor: pointer; /* adds hand pointer on hover*/
+  padding:12px 28px; /* adjusts answer button size */
+  font-weight: bold; /* makes font bold for answer buttons*/
+  font-size: large;
+  background-color: #dcdcdc;
 }
 
 #score { 
   background-color: #b0cd8e;
   padding: 160px;
   border:solid;
+}
+
+#replay-button { /* make class so answer buttons and replay-button don't repeat same code -- possibly quiz-buttons?*/
+  cursor: pointer; /* adds hand pointer on hover*/
+  padding:25px 50px; /* adjusts answer button size */
+  font-weight: bold; /* makes font bold for answer buttons*/
+  font-size: large;
+  background-color: #ffd700;
+}
+
+#score-title {
+  font-size: 50px; 
+  text-decoration: underline;
+}
+
+#user-score {
+  font-size:40px;
+  text-align: center;
 }
