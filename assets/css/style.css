@@ -23,6 +23,11 @@ body {
   font-size: larger;
   padding: 10px;
   background-color: #33a0d5;
+  cursor: pointer; /* adds hand pointer on hover*/
+}
+
+#start-button:hover, .answer:hover { 
+  background-color: #03a9f4; /* on hover change button color */
 }
 
 .hidden {
@@ -61,6 +66,8 @@ body {
   border-radius: 25px; /* makes corners round */
 }
 
+
+
 .answer {
   cursor: pointer; /* adds hand pointer on hover*/
   padding:12px 28px; /* adjusts answer button size */
@@ -83,6 +90,10 @@ body {
   background-color: #ffd700;
 }
 
+#replay-button:hover {
+  background-color: #ffc107;
+}
+
 #score-title {
   font-size: 50px; 
   text-decoration: underline;
@@ -92,3 +103,4 @@ body {
   font-size:40px;
   text-align: center;
 }
+

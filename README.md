@@ -87,22 +87,22 @@ Current to-do
 - make either a common button class and a event listener that takes in that input 
 - or, make an eveent listener for all 4 buttons seperatly. 
 
-5. Add user feedback when selecting an answer 
-- Change the HTML on the question to either: correct, or incorrect. 
-
-6. Style the HTML 
+5. Style the HTML
+- start button hover cursor change, replay button also.  
+- Button hover color change (start, answer, and replay buttons). 
 - CSS: get rid of style repeats by making shared classes. 
+- Add media breakpoints for screen sizes 
 
-7. Make the README
+6. Make the README
 - index working 
 - screenshots added 
 - live page link added 
 - check spelling, grammar
 
-8. Fisher Yates shuffle js code comments clean up. 
+7. Fisher Yates shuffle js code comments clean up. 
 - Double check comments throughout the repo -- cleanup / check for spelling mistakes
 
-9. Add a favicon? 
+8. Add a favicon? 
 
 
 

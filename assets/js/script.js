@@ -92,11 +92,13 @@ function quiz() {
 function answerCheck(userAnswer) {
   if (userAnswer === quizQuestions[tracker].correct){
     document.body.style.backgroundColor = "#008000"; //change bg color  
+    question.textContent = "Correct!"; //Change question HTML to correct
     tracker = tracker + 1; //iteration tracker
     score = score + 1; //add to user score 
     setTimeout(() => {quiz();}, 1000); //call the quiz function after 1 sec. The delay is for the bg color change. 
   } else {
     document.body.style.backgroundColor = "#d91e10";//change bg color 
+    question.textContent = "Incorrect :("; //Change question HTML to incorrect
     tracker = tracker + 1; //iteration tracker
     setTimeout(() => {quiz();}, 1000);
   }
