@@ -1,6 +1,5 @@
 body {
   background-color:#135473;
-  /* background-image: url("../images/quizPageBg.png"); */
 }
 
 .hero-text {
@@ -35,12 +34,12 @@ body {
 }
 
 /* controls position of container for all screens */
-.box-position {
+ .box-position {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} 
 
 #quiz {
   background-color: #1b7ac6;
@@ -48,7 +47,6 @@ body {
   font-size: x-large;
   background-image: url("../images/quizPageBg.png");
 }
-
 
 #question {
   justify-content: center;
@@ -65,8 +63,6 @@ body {
   padding: 15px 32px;
   border-radius: 25px; /* makes corners round */
 }
-
-
 
 .answer {
   cursor: pointer; /* adds hand pointer on hover*/
@@ -103,4 +99,7 @@ body {
   font-size:40px;
   text-align: center;
 }
+
+
+
 

@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>JS Random Quiz</title>
-    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
+    <link rel="icon" type="image/x-icon" href="../JS Quiz/assets/images/favicon.ico">
 </head>
 <body>
   
-    <hero class="box-position" id="hero">
-        <!--<image class="hero-image" src="./assets/images/main.jpg" alt="background imagee"></image>-->
-        
+    <hero class="box-position small-screen" id="hero">
         <div class="hero-text ">
             <h1>
                 JS Random Quiz
@@ -24,7 +22,7 @@
     </hero>
 
     <main class="box-position hidden" id="quiz">
-        <!--text for the question and answer buttons will be replaced by the quiz function-->
+        <!--Quiz question and answer buttons (text will be replaced by the quiz function)-->
         <h2 id="question">
             I am a question
         </h2>
@@ -35,13 +33,13 @@
             <button id="answer-d" class="answer">Burgers</button>
         </answers>
     </main>
-
+    <!--Score screen -->
     <div class="box-position hidden" id="score">
         <h1 id="score-title">
             Results
         </h1>
         <h2 id="user-score">
-             10 / 10 
+             10 / 10 <!--Sample score is replaced in the JS file-->
         </h2>
         <button id="replay-button">
             Replay
