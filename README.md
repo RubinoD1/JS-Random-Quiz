@@ -6,7 +6,9 @@ GitHub live page:
 Start page royalty-free background image source: https://www.adobe.com/express/
 
 ## Index
-
+- [Introduction](#introduction)
+- [Technology](#technology)
+- [Screenshots](#screenshots)
 
 ## Introduction 
 
@@ -71,13 +73,13 @@ function quiz() {
 - CSS
 - JavaScript 
 
-## Scrrenshots 
+## Screenshots 
 
-Main Page 
+![Start](/assets/images/screenshots/start.png)
 
-Quiz 
+![Quiz](/assets/images/screenshots/quiz.png) 
 
-Score Screen 
+![Score](/assets/images/screenshots/score.png) 
 
 ## pseudo code
 
@@ -88,21 +90,17 @@ Current to-do
 - or, make an eveent listener for all 4 buttons seperatly. 
 
 5. Style the HTML
-- start button hover cursor change, replay button also.  
-- Button hover color change (start, answer, and replay buttons). 
 - CSS: get rid of style repeats by making shared classes. 
 - Add media breakpoints for screen sizes 
 
 6. Make the README
-- index working 
-- screenshots added 
 - live page link added 
 - check spelling, grammar
 
 7. Fisher Yates shuffle js code comments clean up. 
 - Double check comments throughout the repo -- cleanup / check for spelling mistakes
 
-8. Add a favicon? 
+
 
 
 
