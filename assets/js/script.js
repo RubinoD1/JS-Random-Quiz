@@ -55,16 +55,16 @@ answerButtonD.addEventListener("click", function() {
 }); 
 
 
-//Using the Fisher Yates shuffle to randomize the quiz questions 
+//Using the Fisher-Yate's Shuffle to randomize the quiz questions 
 function shuffleQueestions(quizQuestions) {
-  let oldElement; //holds reference to the current element in the loop 
-  for (let i = quizQuestions.length - 1; i > 0; i--) {//iterate through the array starting at the last element. 
-    let rand = Math.floor(Math.random() * (i + 1));//used to randomize the selected array element
-    oldElement = quizQuestions[i];//last element in array
-    quizQuestions[i] = quizQuestions[rand];//put the selected array element in a random place
-    quizQuestions[rand] = oldElement;//put the randomly slected array element in the place of the index
+  let lastElement; //used in the iteration process to hold the last element in the array. 
+  for (let i = quizQuestions.length - 1; i > 0; i--) {//iterate through the array reducing its length by 1 untill the first element is reached
+    let rand = Math.floor(Math.random() * (i + 1));//used to randomly select an array element
+    lastElement = quizQuestions[i];//value is the last element in array
+    quizQuestions[i] = quizQuestions[rand];//randomly choose a array element
+    quizQuestions[rand] = lastElement;//put the randomly slected array element in the place of the index
   }
-    return quizQuestions;//return the shuffled array and call the quiz function 
+    return quizQuestions;//return the shuffled array  
 } 
  
 
