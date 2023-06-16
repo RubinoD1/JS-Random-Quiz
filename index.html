@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>JS Random Quiz</title>
     <link rel="icon" type="image/x-icon" href="../JS Quiz/assets/images/favicon.ico">
 </head>
 <body>
-  
-    <hero class="box-position small-screen" id="hero">
+    <!-- Start Screen -->
+    <hero class="box-position " id="hero">
         <div class="hero-text ">
             <h1>
                 JS Random Quiz
@@ -20,19 +21,20 @@
             </button>
         </div>
     </hero>
-
+    
+    <!--Quiz question and answer buttons (text will be replaced by the quiz function)-->
     <main class="box-position hidden" id="quiz">
-        <!--Quiz question and answer buttons (text will be replaced by the quiz function)-->
         <h2 id="question">
             I am a question
         </h2>
         <answers class="answer-buttons">
-            <button id="answer-a" class="answer">Tacos</button>
-            <button id="answer-b" class="answer">Pizza</button>
-            <button id="answer-c" class="answer">Fish</button>
-            <button id="answer-d" class="answer">Burgers</button>
+            <button id="answer-a" class="answer">Answer A</button>
+            <button id="answer-b" class="answer">Answer B</button>
+            <button id="answer-c" class="answer">Answer C</button>
+            <button id="answer-d" class="answer">Answer D</button>
         </answers>
     </main>
+    
     <!--Score screen -->
     <div class="box-position hidden" id="score">
         <h1 id="score-title">
@@ -46,9 +48,6 @@
         </button>
     </div>
 
-
-
-    
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
