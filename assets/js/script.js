@@ -11,8 +11,10 @@ const scoreScreen = document.getElementById("score"); //score paage box
 const results = document.getElementById("user-score"); //user score 
 const replay = document.getElementById("replay-button");
 
+
 let tracker = 0;//iteration tracker 
 let score = 0; //user score tracker
+
 
 //event listener for start button 
 startButton.addEventListener("click", function(){
@@ -21,6 +23,7 @@ startButton.addEventListener("click", function(){
   shuffleQueestions(quizQuestions); //shuffle the quizQuestions array
   quiz(); //trigger quiz function
 });
+
 
 //reshuffle array and begin the quiz 
 replay.addEventListener("click", function(){
@@ -32,27 +35,15 @@ replay.addEventListener("click", function(){
   quiz(); //begin the quiz 
 })
 
-//answer buttons event listeners 
-//set answer button user click to userAnswer var and call the validity function with the var passed in
-answerButtonA.addEventListener("click", function() {
-  let userAnswer = document.getElementById("answer-a").innerHTML; 
-  answerCheck(userAnswer);
-}); 
 
-answerButtonB.addEventListener("click", function() {
-  let userAnswer = document.getElementById("answer-b").innerHTML; 
-  answerCheck(userAnswer);
-}); 
-
-answerButtonC.addEventListener("click", function() {
-  let userAnswer = document.getElementById("answer-c").innerHTML; 
-  answerCheck(userAnswer);
-}); 
-
-answerButtonD.addEventListener("click", function() {
-  let userAnswer = document.getElementById("answer-d").innerHTML; 
-  answerCheck(userAnswer);
-}); 
+//answer button event handler for all answer buttons 
+document.addEventListener('click', function answerButtons(event) {
+  const classCheck = event.target.classList.contains('answer');
+  if (classCheck){
+    let userAnswer = event.target.innerHTML; 
+    answerCheck(userAnswer);
+  } 
+})
 
 
 //Using the Fisher-Yate's Shuffle to randomize the quiz questions 
@@ -103,6 +94,7 @@ function answerCheck(userAnswer) {
     setTimeout(() => {quiz();}, 1000);
   }
 }
+
 
 //nested array for the quiz questions/answers
 const quizQuestions = 
