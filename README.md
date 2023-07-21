@@ -77,9 +77,9 @@ function quiz() {
 
 ![Start](./assets/images/Screenshots/start.png)
 
-![Quiz](./assets/images/screenshots/quiz.png) 
+![Quiz](./assets/images/Screenshots/quiz.png) 
 
-![Score](./assets/images/screenshots/score.png) 
+![Score](./assets/images/Screenshots/score.png) 
 
 ## pseudo code
 
