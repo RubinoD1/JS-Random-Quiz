@@ -3,6 +3,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
 
 GitHub repository:https://github.com/RubinoD1/JS-Random-Quiz
+
 GitHub live page:
 
 ## Index
@@ -14,9 +15,9 @@ GitHub live page:
 
 **What is JS Random Quiz?** 
 
-JS Random Quiz is a JavaScript built quiz app. It uses an array in the JS file to store the quiz questions. Once the start button is pressed the array is shuffled in order to randomize the order of the quiz questions. On answering a question the screen bg color will change depending on whether the answer was correct, or incorrect. 
+JS Random Quiz is a JavaScript built quiz app. It uses an array in the JS file to store the quiz questions. Once the start button is pressed, the array is shuffled in order to randomize the order of the quiz questions. On answering a question, the screen bg color will change depending on whether the answer was correct, or incorrect.  
 
-Once their are no more questions remaining in the array the score screen will display. The user will see how many questions that they have answered correctly and a replay button can be used to play again. The replay button will re-shuffle the quiz so the question order will not be the same as the previous quiz. 
+Once there are no more questions remaining in the array, the score screen will display. The user will see how many questions they have answered correctly and a replay button can be used to play again. The replay button will re-shuffle the quiz so the question order will not be the same as the previous quiz.
 
 **How do I add my own quiz questions?** 
 
@@ -33,7 +34,7 @@ const quizQuestions =
 ]
 ```
 
-To add your own questions simply follow this same format. A comma is needed to seperate the questions (no comma is needed for the last question). Bellow is an example of a three question quiz: 
+To add your own questions, simply follow this same format. A comma is needed to separate the questions (no comma is needed for the last question). Bellow is an example of a three-question quiz: 
 
 ```
 const quizQuestions = 
@@ -59,7 +60,7 @@ As many questions as desired can be added to the quizQuestions array.
 
 **IF the body bg-color is changed in the CSS file** 
 
-If a change is made to the body bg-color an update will need to made to reflect this change in the quiz function. The answerCheck function alters the bg-color of the body as part of the answer validation in order to give user feedback upon selecting an answer. When the quiz function is called the original body bg-color is restored. Below is an example: 
+If a change is made to the body bg-color an update will need to be made to reflect this change in the quiz function. The answerCheck function alters the bg-color of the body as part of the answer validation in order to give user feedback upon selecting an answer. When the quiz function is called, the original body bg-color is restored. Below is an example: 
 
 ```
 function quiz() {
@@ -87,7 +88,6 @@ Current to-do
 
 6. Make the README
 - live page link added 
-- check spelling, grammar
 
 7. check for spelling mistakes on code comments
 
