@@ -82,14 +82,6 @@ function quiz() {
 
 ![Score](./assets/images/Screenshots/score.png) 
 
-## pseudo code
-
-Current to-do 
-
-6. Make the README
-- live page link added 
-
-7. check for spelling mistakes on code comments
 
 
 

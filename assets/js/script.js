@@ -7,7 +7,7 @@ const answerButtonC = document.getElementById("answer-c");
 const answerButtonD = document.getElementById("answer-d");
 const hero = document.getElementById("hero"); //start page box 
 const quizBox = document.getElementById("quiz"); //quiz page box
-const scoreScreen = document.getElementById("score"); //score paage box 
+const scoreScreen = document.getElementById("score"); //score page box 
 const results = document.getElementById("user-score"); //user score 
 const replay = document.getElementById("replay-button");
 
@@ -48,7 +48,7 @@ document.addEventListener('click', function answerButtons(event) {
 
 //Using the Fisher-Yate's Shuffle to randomize the quiz questions 
 function shuffleQueestions(quizQuestions) {
-  let lastElement; //used in the iteration process to hold the last element in the array. 
+  let lastElement; //used in the iteration process to hold the last element in the array 
   for (let i = quizQuestions.length - 1; i > 0; i--) {//iterate through the array reducing its length by 1 untill the first element is reached
     let rand = Math.floor(Math.random() * (i + 1));//used to randomly select an array element
     lastElement = quizQuestions[i];//value is the last element in array
@@ -59,7 +59,7 @@ function shuffleQueestions(quizQuestions) {
 } 
  
 
-//function to select quiz question and add info to HTML page
+//function to add quiz question info to the HTML page, or trigger the score page when no more questions reamain
 function quiz() {
     //reset bg color to default (it is altered when an answer is selected) 
     document.body.style.backgroundColor = "#135473"; 
