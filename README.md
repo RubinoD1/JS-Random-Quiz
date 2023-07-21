@@ -4,7 +4,7 @@
 
 GitHub repository:https://github.com/RubinoD1/JS-Random-Quiz
 
-GitHub live page:
+GitHub live page: https://rubinod1.github.io/JS-Random-Quiz/
 
 ## Index
 - [Introduction](#introduction)
