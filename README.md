@@ -1,9 +1,9 @@
 # JS-Random-Quiz
+![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
 
 GitHub repository:https://github.com/RubinoD1/JS-Random-Quiz
 GitHub live page:
-
-Start page royalty-free background image source: https://www.adobe.com/express/
 
 ## Index
 - [Introduction](#introduction)
@@ -75,25 +75,21 @@ function quiz() {
 
 ## Screenshots 
 
-![Start](/assets/images/screenshots/start.png)
+![Start](./assets/images/Screenshots/start.png)
 
-![Quiz](/assets/images/screenshots/quiz.png) 
+![Quiz](./assets/images/screenshots/quiz.png) 
 
-![Score](/assets/images/screenshots/score.png) 
+![Score](./assets/images/screenshots/score.png) 
 
 ## pseudo code
 
 Current to-do 
 
-5. Style the HTML
-- CSS: get rid of style repeats by making shared classes. 
-
 6. Make the README
 - live page link added 
 - check spelling, grammar
 
-7. Fisher Yates shuffle js code comments clean up. 
-- Double check comments throughout the repo -- cleanup / check for spelling mistakes
+7. check for spelling mistakes on code comments
 
 
 

@@ -32,7 +32,7 @@ body {
   visibility: hidden;
 }
 
-/* controls position of container for all screens */
+/* controls position of container for all divs */
  .box-position {
   position: absolute;
   top: 50%;
@@ -56,7 +56,6 @@ body {
 
 .answer-buttons {
   display: grid;
-  /* bg color and padding create a border around the answer butttons*/
   background-color: #607D8B; 
   padding: 15px 32px;
   border-radius: 25px; /* makes corners round */
@@ -73,7 +72,7 @@ body {
 }
 
 #replay-button { 
-  padding:25px 50px; /* adjusts answer button size */
+  padding:25px 50px; /* adjusts replay button size */
   background-color: #ffd700;
 }
 

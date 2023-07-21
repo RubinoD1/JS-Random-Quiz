@@ -53,7 +53,7 @@ function shuffleQueestions(quizQuestions) {
     let rand = Math.floor(Math.random() * (i + 1));//used to randomly select an array element
     lastElement = quizQuestions[i];//value is the last element in array
     quizQuestions[i] = quizQuestions[rand];//randomly choose a array element
-    quizQuestions[rand] = lastElement;//put the randomly slected array element in the place of the index
+    quizQuestions[rand] = lastElement;//put the randomly slected array element in the place of the last index element 
   }
     return quizQuestions;//return the shuffled array  
 } 
