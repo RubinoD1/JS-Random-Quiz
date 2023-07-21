@@ -85,13 +85,8 @@ function quiz() {
 
 Current to-do 
 
-4. Make event listener for the remaining answer buttons 
-- make either a common button class and a event listener that takes in that input 
-- or, make an eveent listener for all 4 buttons seperatly. 
-
 5. Style the HTML
 - CSS: get rid of style repeats by making shared classes. 
-- Add media breakpoints for screen sizes 
 
 6. Make the README
 - live page link added 

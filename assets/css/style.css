@@ -10,21 +10,18 @@ body {
   text-align: center;
   padding: 260px;
   font-size: x-large;
-  border:solid;
   /* bg img settings */
   background-image: url("../images/mainbg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
- 
 }
 
 #start-button {
   font-size: larger;
   padding: 10px;
   background-color: #33a0d5;
-  cursor: pointer; /* adds hand pointer on hover*/
 }
 
 #start-button:hover, .answer:hover { 
@@ -53,7 +50,6 @@ body {
 #question {
   justify-content: center;
   display: flex;
-  border:solid;
   padding: 50px;
   background-color: #009fa4;
 }
@@ -67,24 +63,17 @@ body {
 }
 
 .answer {
-  cursor: pointer; /* adds hand pointer on hover*/
   padding:12px 28px; /* adjusts answer button size */
-  font-weight: bold; /* makes font bold for answer buttons*/
-  font-size: large;
   background-color: #dcdcdc;
 }
 
 #score { 
   background-color: #b0cd8e;
   padding: 160px;
-  border:solid;
 }
 
-#replay-button { /* make class so answer buttons and replay-button don't repeat same code -- possibly quiz-buttons?*/
-  cursor: pointer; /* adds hand pointer on hover*/
+#replay-button { 
   padding:25px 50px; /* adjusts answer button size */
-  font-weight: bold; /* makes font bold for answer buttons*/
-  font-size: large;
   background-color: #ffd700;
 }
 
@@ -102,9 +91,18 @@ body {
   text-align: center;
 }
 
+.cursor {
+  cursor:pointer;
+}
+
+.border-font {
+  border:solid;
+  font-size: large;
+}
 
 
- /* media break points */
+
+/* media break points */
 @media screen and (max-width: 706px) {
   .hero-text {
    padding: 160px;
@@ -135,7 +133,6 @@ body {
   padding: 70px;
 }
 }
-
 
 @media screen and (max-width: 306px) {
   .hero-text {
